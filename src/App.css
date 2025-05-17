@@ -114,6 +114,47 @@ h2 {
   transform: scale(1.05);
 }
 
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.undo-button,
+.restart-button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.undo-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.restart-button {
+  background-color: #2196f3;
+}
+
+.restart-button:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+}
+
 .error {
   color: #d32f2f;
   font-size: 0.9rem;
@@ -123,11 +164,21 @@ h2 {
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  25% { transform: scale(1.05); }
-  50% { transform: scale(0.95); }
-  75% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Responsive Layout */
